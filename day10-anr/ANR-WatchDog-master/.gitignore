@@ -1,0 +1,21 @@
+
+# ECLIPSE
+.classpath
+.project
+.settings/
+
+# INTELLIJ
+.idea/
+*.ipr
+*.iml
+
+# SYSTEM FILES
+*~
+.DS_STORE
+
+# GRADLE
+.gradle
+/build/
+gradle.properties
+local.properties
+.gradletasknamecache

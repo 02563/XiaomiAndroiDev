@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Marquee TextView -->
+
+    <!-- First Button -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="108dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="Longlonglonglonglonglonglongtext"
+        android:textColor="#FA0202"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="onButtonClick"
+        android:text="FirstButton"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <!-- Gender RadioGroup -->
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/DemoStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Choose your gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/radioMale" />
+
+    </RadioGroup>
+
+    <!-- Favorite Fruit TextView -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Choose your favorite fruit"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup" />
+
+    <!-- Fruit CheckBoxes -->
+    <CheckBox
+        android:id="@+id/fruitOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watermelon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+    <CheckBox
+        android:id="@+id/fruitTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fruitOne" />
+
+    <CheckBox
+        android:id="@+id/fruitThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fruitTwo" />
+
+    <!-- ToggleButton and Switch are not constrained, so I'll skip them for now -->
+
+    <!-- Enter Text TextView -->
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/DemoStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter your text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fruitThree" />
+
+    <!-- EditText -->
+    <EditText
+        android:inputType="numberPassword"
+        android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:id="@+id/myEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Your Text"
+        android:textColorHint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+    <!-- Commit Button -->
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="244dp"
+        android:onClick="commitbutton"
+        android:text="Commit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myEditText" />
+
+    <TextView
+        android:id="@+id/richtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="RichText"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <Button
+        android:id="@+id/button_goto_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToNextActivity"
+        android:text="Go to Next Activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

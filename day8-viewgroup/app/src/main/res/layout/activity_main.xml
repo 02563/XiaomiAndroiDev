@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--com.example.view.CustomVIew
+    android:id="@+id/child"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+-->
+
+
+    <!--com.example.view.CustomEditText
+        android:id="@+id/edit"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        -->
+
+    <com.example.view.TagCloud xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/edit"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:hMargin="10dp"
+        app:vMargin="5dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FLRFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/image_view"
+                android:text="setting1">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/image_view2"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view3"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view3"
+                android:text="setting1">
+            </TextView>
+            <ImageView
+                android:id="@+id/image_view5"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view6"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view6"
+                android:text="setting1">
+            </TextView>
+            <ImageView
+                android:id="@+id/image_view7"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view8"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view8"
+                android:text="setting1">
+            </TextView>
+            <ImageView
+                android:id="@+id/image_view9"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view10"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view10"
+                android:text="setting1">
+            </TextView>
+            <ImageView
+                android:id="@+id/image_view11"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view12"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view12"
+                android:text="setting1">
+            </TextView>
+            <ImageView
+                android:id="@+id/image_view13"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view14"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view14"
+                android:text="setting1">
+            </TextView>
+            <ImageView
+                android:id="@+id/image_view15"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view16"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view16"
+                android:text="setting1">
+            </TextView>
+            <ImageView
+                android:id="@+id/image_view17"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view18"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view18"
+                android:text="setting1">
+            </TextView>
+            <ImageView
+                android:id="@+id/image_view19"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view20"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view20"
+                android:text="setting1">
+            </TextView>
+            <ImageView
+                android:id="@+id/image_view21"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view22"
+                android:layout_width="44dp"
+                android:layout_height="82dp"
+                android:src="@drawable/tab_my" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view22"
+                android:text="setting1">
+            </TextView>
+            <ImageView
+                android:id="@+id/image_view23"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView >

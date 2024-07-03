@@ -1,0 +1,74 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <!-- 第一个Fragment -->
+    <FrameLayout
+        android:id="@+id/fragment_container1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_container2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 第二个Fragment -->
+    <FrameLayout
+        android:id="@+id/fragment_container2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_container1"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/norque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="常见问题"
+        android:background="@color/white"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/fragment_container1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/log"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/log"
+        android:text="登录"
+        android:background="@color/white"
+        android:textColor="#808080"
+        app:layout_constraintTop_toTopOf="@id/norque"
+        app:layout_constraintStart_toEndOf="@id/norque"
+        app:layout_constraintEnd_toStartOf="@id/changeinf"
+ />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/changeinf"
+        android:text="修改信息"
+        android:background="@color/white"
+        android:textColor="#808080"
+        app:layout_constraintTop_toTopOf="@id/log"
+        app:layout_constraintStart_toEndOf="@id/log"
+        app:layout_constraintEnd_toStartOf="@id/securty"
+ />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/securty"
+        android:text="账号安全"
+        android:background="@color/white"
+        android:textColor="#808080"
+        app:layout_constraintTop_toTopOf="@id/changeinf"
+        app:layout_constraintStart_toEndOf="@id/changeinf"
+        app:layout_constraintEnd_toEndOf="parent"
+ />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Activity" />
+
+    <Button
+        android:id="@+id/ServiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service"
+        android:layout_below="@id/myButton"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_below="@id/ServiceButton"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

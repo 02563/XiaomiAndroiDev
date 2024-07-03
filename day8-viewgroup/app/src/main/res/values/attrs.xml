@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TagCloud">
+        <attr name="hMargin" format="dimension"/>
+        <attr name="vMargin" format="dimension"/>
+    </declare-styleable>
+</resources>

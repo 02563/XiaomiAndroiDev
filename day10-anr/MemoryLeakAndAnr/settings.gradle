@@ -1,0 +1,53 @@
+pluginManagement {
+    repositories {
+//        maven {
+//            url "https://pkgs.d.xiaomi.net:443/artifactory/maven-public-virtual/"
+//        }
+//        maven {
+//            url "https://pkgs.d.xiaomi.net:443/artifactory/maven-public-virtual/"
+//        }
+//        maven {
+//            url "https://pkgs.d.xiaomi.net:443/artifactory/maven-release-virtual/"
+//        }
+//        maven {
+//            url "https://pkgs.d.xiaomi.net:443/artifactory/maven-remote-virtual/"
+//        }
+//        maven {
+//            url "https://pkgs.d.xiaomi.net:443/artifactory/maven-snapshot-virtual/"
+//        }
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+//        maven {
+//            url "https://pkgs.d.xiaomi.net:443/artifactory/maven-public-virtual/"
+//        }
+//        maven {
+//            url "https://pkgs.d.xiaomi.net:443/artifactory/maven-public-virtual/"
+//        }
+//        maven {
+//            url "https://pkgs.d.xiaomi.net:443/artifactory/maven-release-virtual/"
+//        }
+//        maven {
+//            url "https://pkgs.d.xiaomi.net:443/artifactory/maven-remote-virtual/"
+//        }
+//        maven {
+//            url "https://pkgs.d.xiaomi.net:443/artifactory/maven-snapshot-virtual/"
+//        }
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "MemoryLeakAndAnr"
+include ':app'

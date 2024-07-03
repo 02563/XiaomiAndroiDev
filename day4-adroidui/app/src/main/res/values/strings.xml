@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidUI</string>
+    <string name="text_change">Text Changed!</string>
+</resources>
